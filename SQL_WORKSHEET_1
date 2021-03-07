@@ -1,0 +1,97 @@
+Q1 and Q2 have one or more correct answer. Choose all the correct option to answer your question.
+1. Which of the following is/are DDL commands in SQL? 
+ A) Create B) Update C) Delete D) ALTER 
+Answer: A and D
+2. Which of the following is/are DML commands in SQL? 
+ A) Update B) Delete C) Select D) 
+Answer: A, B and C
+ 
+Drop Q3 to Q10 have only one correct answer. Choose the correct option to answer your question. 
+3. Full form of SQL is: 
+ A) Strut querying language B) Structured Query Language C) Simple Query Language D) None of them 
+Answer: B
+4. Full form of DDL is: 
+ A) Descriptive Designed Language B) Data Definition Language C) Data Descriptive Language D) None of the above.
+Answer: B
+5. DML is: 
+ A) Data Manipulation Language B) Data Management Language C) Data Modeling Language D) None of these 
+Answer: A
+6. Which of the following statements can be used to create a table with column B int type and C float type?
+ A) Table A (B int, C float) B) Create A (b int, C float) C) Create Table A (B int,C float) D) All of them 
+Answer: C
+7. Which of the following statements can be used to add a column D (float type) to the table A created above?
+ A) Table A ( D float) B) Alter Table A ADD COLUMN D float C)  Table A( B int, C float, D float) D) None of them
+Answer: B
+8. Which of the following statements can be used to drop the column added in the above question?
+ A) Table A Drop D B) Alter Table A Drop Column D C) Delete D from A D) None of them
+Answer: B
+9. Which of the following statements can be used to change the data type (from float to int ) of the column D of table A created in above questions?
+ A) Table A (D float int) B) Alter Table A Alter Column D int C) Alter Table A D float int D) Alter table A Column D float to int
+Answer: B
+10. Suppose we want to make Column B of Table A as primary key of the table. By which of the following statements we can do it?
+ A) Alter Table A Add Constraint Primary Key B B) Alter table (B primary key) C) Alter Table A Add Primary key B D) None of them
+Answer: C
+Q11 to Q15 are subjective answer type questions, Answer them briefly.
+11. What is data-warehouse? 
+Answer :
+    A Data Warehousing (DW) is process for collecting and managing data from varied sources to provide meaningful business insights. A Data warehouse is typically used to connect and analyse business data from heterogeneous sources. The data warehouse is the core of the BI system which is built for data analysis and reporting.
+
+It is a blend of technologies and components which aids the strategic use of data. It is electronic storage of a large amount of information by a business which is designed for query and analysis instead of transaction processing. It is a process of transforming data into information and making it available to users in a timely manner to make a difference.
+Data flows into a data warehouse from the transactional system and other relational databases.
+Data may be:
+Structured
+Semi-structured
+Unstructured data
+
+Three main types of Data Warehouses (DWH) are:
+1. Enterprise Data Warehouse
+2.Operational Data Store
+3. Data Mart
+    
+    
+12. What is the difference between OLTP VS OLAP? 
+Answer :
+    KEY DIFFERENCE between OLTP and OLAP:
+Online Analytical Processing (OLAP) is a category of software tools that analyze data stored in a database whereas Online transaction processing (OLTP) supports transaction-oriented applications in a 3-tier architecture.
+OLAP creates a single platform for all type of business analysis needs which includes planning, budgeting, forecasting, and analysis while OLTP is useful to administer day to day transactions of an organization.
+OLAP is characterized by a large volume of data while OLTP is characterized by large numbers of short online transactions.
+In OLAP, data warehouse is created uniquely so that it can integrate different data sources for building a consolidated database whereas OLTP uses traditional DBMS.
+    
+    
+13. What are the various characteristics of data-warehouse? 
+Answer :
+    Characteristics and Functions of Data warehouse:
+1. Subject-oriented –
+A data warehouse is always a subject oriented as it delivers information about a theme instead of organization’s current operations. It can be achieved on specific theme. That means the data warehousing process is proposed to handle with a specific theme which is more defined.
+2. Integrated –
+It is somewhere same as subject orientation which is made in a reliable format. Integration means founding a shared entity to scale the all similar data from the different databases. The data also required to be resided into various data warehouse in shared and generally granted manner.
+3. Time-Variant –
+In this data is maintained via different intervals of time such as weekly, monthly, or annually etc. It founds various time limit which are structured between the large datasets and are held in online transaction process (OLTP). 
+4. Non-Volatile –
+As the name defines the data resided in data warehouse is permanent. It also means that data is not erased or deleted when new data is inserted. It includes the mammoth quantity of data that is inserted into modification between the selected quantity on logical business. It evaluates the analysis within the technologies of warehouse.
+
+In this, data is read-only and refreshed at particular intervals. This is beneficial in analysing historical data and in comprehension the functionality. It does not need transaction process, recapture and concurrency control mechanism. Functionalities such as delete, update, and insert that are done in an operational application are lost in data warehouse environment. Two types of data operations done in the data warehouse are:
+Data Loading
+Data Access
+    
+14. What is Star-Schema?
+Answer :
+    Star Schema in data warehouse, in which the center of the star can have one fact table and a number of associated dimension tables. It is known as star schema as its structure resembles a star. The Star Schema data model is the simplest type of Data Warehouse schema. It is also known as Star Join Schema and is optimized for querying large data sets
+
+A star schema is a relational schema where a relational schema whose design represents a multidimensional data model. The star schema is the explicit data warehouse schema. It is known as star schema because the entity-relationship diagram of this schemas simulates a star, with points, diverge from a central table. The center of the schema consists of a large fact table, and the points of the star are the dimension tables
+.
+Characteristics of Star Schema:
+
+1. Every dimension in a star schema is represented with the only one-dimension table.
+2. The dimension table should contain the set of attributes.
+3. The dimension table is joined to the fact table using a foreign key
+4. The dimension table are not joined to each other
+5. Fact table would contain key and measure
+6. The Star schema is easy to understand and provides optimal disk usage.
+7. The dimension tables are not normalized. For instance, in the above figure, Country_ID does not have Country lookup table as an OLTP design would have.
+8. The schema is widely supported by BI Tools
+    
+    
+15. What do you mean by SETL? 
+Answer:
+    Short for Set Theory as a Language (or Set Language), SETL is a high-level programming language that’s based on the mathematical theory of sets. It was developed in the early 1970’s by mathematician Professor J. Schwartz. SETL is an interpreted language with a syntax that is resembles C and in many cases similar to Perl. In SETL every statement is terminated by a semicolon. Variable names are case-insensitive and are automatically determined by their last assignment.
